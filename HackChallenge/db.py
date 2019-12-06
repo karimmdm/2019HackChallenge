@@ -91,6 +91,7 @@ class AllergensIngredients(db.Model):
             "detailOid": self.detailOid,
             "foodName": self.foodName,
             "ingredients": self.ingredients,
+            "allergens": self.allergens,
             "alochol": self.alcohol,
             "eggs": self.eggs,
             "fish": self.fish,
