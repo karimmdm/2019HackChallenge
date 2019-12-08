@@ -25,13 +25,17 @@ class NetworkManager {
         //recipePuppyURL+"?i="+ingredients.joined(separator: ",")
         let structure =
         [
-             "allergens": "milk;soy;wheat"
+            "allergens": ingredients.joined(separator: ";")
         ]
         print(unitoid)
        // "/api/menus/"+String(unitoid)+"/filter/"
             // parameters:structure
+        let headers=[
+            "Content-Type":"application/json"
         
-        Alamofire.request(URL + "/api/menus/42/", method: .get ).validate().responseData { response in
+        ]
+        
+        Alamofire.request(URL + "/api/menus/"+String(unitoid)+"/filter/", method: .post,parameters:structure,encoding:JSONEncoding.default, headers: headers ).validate().responseData { response in
             switch response.result {
             case .success(let data):
                 let jsonDecoder = JSONDecoder()
