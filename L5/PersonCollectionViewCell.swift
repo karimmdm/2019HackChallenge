@@ -14,19 +14,24 @@ class PersonCollectionViewCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        layer.masksToBounds = true
+        layer.cornerRadius = 20
 
         photoImageView = UIImageView()
         photoImageView.translatesAutoresizingMaskIntoConstraints = false
         photoImageView.contentMode = .scaleAspectFill
+        photoImageView.clipsToBounds = true
         photoImageView.layer.masksToBounds = true
-        photoImageView.layer.cornerRadius=20
+//        photoImageView.layer.masksToBounds = true
+//        photoImageView.layer.cornerRadius=20
         contentView.addSubview(photoImageView)
         
         nameLabel = UILabel()
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.contentMode = .scaleAspectFill
-        nameLabel.layer.masksToBounds = true
-        nameLabel.layer.cornerRadius=20
+//        nameLabel.layer.masksToBounds = true
+//        nameLabel.layer.cornerRadius=20
         contentView.addSubview(nameLabel)
         
         setupConstraints()
@@ -37,12 +42,14 @@ class PersonCollectionViewCell: UICollectionViewCell {
             photoImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             photoImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             photoImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            photoImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
                    ])
         
         NSLayoutConstraint.activate([
-            nameLabel.topAnchor.constraint(equalTo: photoImageView.bottomAnchor,constant:-10),
+//            nameLabel.topAnchor.constraint(equalTo: photoImageView.bottomAnchor,constant:-10),
             nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            nameLabel.heightAnchor.constraint(equalToConstant: 30),
             nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
         

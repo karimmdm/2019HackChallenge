@@ -104,7 +104,8 @@ class searchView: UIViewController {
           
         NSLayoutConstraint.activate([
             searchButton.topAnchor.constraint(equalTo: foodLabel.bottomAnchor,constant:50),
-            searchButton.leadingAnchor.constraint(equalTo: view.centerXAnchor,constant:-90),
+            searchButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+//            searchButton.leadingAnchor.constraint(equalTo: view.centerXAnchor,constant:-90),
            
             
         ])
