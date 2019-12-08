@@ -76,7 +76,7 @@ def getAllergens(detailOid):
     res = {"success": True, "data": [allergen.serialize() for allergen in allergens]}
     return json.dumps(res), 200
 
-@app.route("/api/menus/filter/")
+@app.route("/api/menus/filter/", methods = ['POST'])
 def getFoodWithoutAllergen():
     post_body = json.loads(request.data)
     allergens = post_body.get('allergens', '').split(';')
@@ -95,7 +95,7 @@ def getFoodWithoutAllergen():
             available.append(food.serialize())
     return json.dumps({"success": True, "data": available})
 
-@app.route("/api/menus/<int:unitOid>/filter/")
+@app.route("/api/menus/<int:unitOid>/filter/", methods = ["POST"])
 def getFoodWithoutAllergenByLocation(unitOid):
     post_body = json.loads(request.data)
     allergens = post_body.get('allergens', '').split(';')
@@ -129,7 +129,7 @@ def getFoodWithoutAllergenByLocation(unitOid):
             available.append(food.serialize())
     return json.dumps({"success": True, "data": available})
 
-@app.route("/api/menus/filterMenu/<int:oid>/")
+@app.route("/api/menus/filterMenu/<int:oid>/", methods = ['POST'])
 def getFoodWithoutAllergenByMenu(oid):
     post_body = json.loads(request.data)
     allergens = post_body.get('allergens', '').split(';')
