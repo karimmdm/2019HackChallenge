@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  L5
@@ -5,7 +6,6 @@
 //  Created by Maitreyi Chatterjee on 11/05/19.
 //  Copyright © 2019 Maitreyi Chatterjee. All rights reserved.
 //
-
 import UIKit
 
 
@@ -41,10 +41,10 @@ class ViewController: UIViewController, UISearchResultsUpdating {
     var restaurant9: Restaurant!
     var restaurant10: Restaurant!
     var restaurant11: Restaurant!
-    var american: Filter!
-    var mexican: Filter!
-    var indian: Filter!
-    var breakfast: Filter!
+    var nearestFirst: Filter!
+    var north: Filter!
+    var central: Filter!
+    var west: Filter!
     var BRB: Filter!
     var filter6: Filter!
     var filter7: Filter!
@@ -71,20 +71,20 @@ class ViewController: UIViewController, UISearchResultsUpdating {
         
         // Create Person objects
         
-        restaurant1 = Restaurant(food: "american", imageName: "restaurant1", name: "Bear Necessities")
-        restaurant2 = Restaurant(food: "mexican", imageName: "restaurant 2", name: "Bus Stop Bagels")
-        restaurant3 = Restaurant(food: "american", imageName: "restaurant 3", name: "Cafe Jennie")
-        restaurant4 = Restaurant(food: "mexican", imageName: "restaurant4", name: "Cornell Dairy ")
+        restaurant1 = Restaurant(food: "north", imageName: "Unknown-3", name: "Bear Necessities")
+        restaurant2 = Restaurant(food: "central", imageName: "Unknown", name: "Bus Stop Bagels")
+        restaurant3 = Restaurant(food: "nearest first", imageName: "restaurant 3", name: "Cafe Jennie")
+        restaurant4 = Restaurant(food: "central", imageName: "restaurant4", name: "Cornell Dairy ")
         
-        restaurant5 = Restaurant(food: "american", imageName: "restaurant5", name: "Goldies")
-        restaurant6 = Restaurant(food: "mexican", imageName: "resaturant6", name: "The Ivy Room")
+        restaurant5 = Restaurant(food: "central", imageName: "restaurant5", name: "Goldies")
+        restaurant6 = Restaurant(food: "central", imageName: "resaturant6", name: "The Ivy Room")
         
-        restaurant7 = Restaurant(food: "american", imageName: "resaturant7", name: "Mattins")
-        restaurant8 = Restaurant(food: "mexican", imageName: "restaurant8", name: "Sweet Sensations")
+        restaurant7 = Restaurant(food: "central", imageName: "resaturant7", name: "Mattins")
+        restaurant8 = Restaurant(food: "west", imageName: "restaurant8", name: "Sweet Sensations")
         
-        restaurant9 = Restaurant(food: "american", imageName: "restaurant9", name: "Trillium")
-        restaurant10 = Restaurant(food: "mexican", imageName: "restaurant10", name: "Martha's Express")
-        restaurant11  = Restaurant(food: "mexican", imageName:"takeushome", name: "Take Us Home")
+        restaurant9 = Restaurant(food: "central", imageName: "Unknown-2", name: "Trillium")
+        restaurant10 = Restaurant(food: "BRB", imageName: "restaurant10", name: "Martha's Express")
+        restaurant11  = Restaurant(food: "BRB", imageName:"takeushome", name: "Take Us Home")
         
         
         
@@ -94,18 +94,18 @@ class ViewController: UIViewController, UISearchResultsUpdating {
         persons=[ restaurant1,restaurant2,restaurant3,restaurant4,restaurant5,restaurant6,restaurant7,restaurant4,restaurant8,restaurant9,restaurant10,restaurant11]
         
         
-        american = Filter(select: false, name: "american")
-        mexican = Filter(select: false, name: "mexican")
-        indian = Filter(select: false, name: "Indian")
+        nearestFirst = Filter(select: false, name: "nearest first")
+        north = Filter(select: false, name: "north")
+        central = Filter(select: false, name: "central")
         BRB = Filter(select: false, name: "BRB")
-        breakfast = Filter(select: false, name: "breakfast")
-        filters=[american,indian,mexican,BRB,breakfast]
+        west = Filter(select: false, name: "west")
+        filters=[nearestFirst,central,north,BRB,west]
         
         
         // TODO: Setup collectionView
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.minimumLineSpacing = padding
+        layout.minimumLineSpacing = 40
         layout.minimumInteritemSpacing = padding
         
         
@@ -206,7 +206,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         // We want: | padding CELL padding CELL padding CELL padding |
         if(collectionView==self.collectionView){
         let size = (collectionView.frame.width -  padding) / 1.0
-            return CGSize(width: size, height: size)}
+            return CGSize(width: size, height: size/1.5)}
         else{
             let size = (collectionView.frame.width - 2*padding) / 3.0
                      return CGSize(width: size+70, height: 30)
@@ -311,5 +311,3 @@ extension UIColor {
   }
 
 }
-
-

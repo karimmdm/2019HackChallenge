@@ -77,7 +77,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UISearchRes
         // this to yes if using another controller to display the search results.
         searchController.dimsBackgroundDuringPresentation = false
         
-        searchController.searchBar.placeholder = searchBy == .title ? "Search by title": "Search by ingredients (deliminate \", \")"
+        searchController.searchBar.placeholder = searchBy == .title ? "Search by title": "Search by ingredients (deliminate \"; \")"
         searchController.searchBar.sizeToFit()
         tableView.tableHeaderView = searchController.searchBar
         
@@ -94,7 +94,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UISearchRes
 
        cell.titleLabel.text = recipes[indexPath.row].foodName
         
-        cell.detailLabel.text = "Ingredients: \(recipes[indexPath.row].menuName)"
+        cell.detailLabel.text = "Ingredients: \(recipes[indexPath.row].ingredients)"
         
         return cell
     }
@@ -133,7 +133,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UISearchRes
                     // that you get after you decode the response
                     // Hint: The searchText is a string where the ingredients are
                     // separated by commas. (i.e. Apple, Butter, Cream)
-                     var unitoid=UnitOid[restaurant.name]!
+                    var unitoid=UnitOid[restaurant.name]!
                     var arr = searchText.components(separatedBy: ",")
                 NetworkManager.getRecipe(fromIngredients:arr,unitoid:unitoid) { recipes in
                         self.recipes = recipes
