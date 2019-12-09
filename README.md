@@ -1,6 +1,8 @@
 # Safe Eat
 ## - Eat safe when we take care of finding the allergens for you -
 ### Screens: 
+![Landing Page](https://user-images.githubusercontent.com/42630113/70406330-5835b300-1a0e-11ea-96f0-e8582ab90d72.png)
+
 
 ### Description: 
 Ever went to an eatery looking for gluten-free food and returned disappointed? Not any more. Safe Eat is an app that displays a list of eating options according to the user’s dietary restrictions or allergen information for on-campus eateries. Students with allergies can filter through food at different eateries by putting in their allergen information in a search bar. They can also filter through different eateries based on on-campus locations. Want to know more about what dishes your favourite eateries are serving but have a lot of allergies? Enjoy SafeEat!
