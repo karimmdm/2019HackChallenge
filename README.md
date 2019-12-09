@@ -9,5 +9,5 @@ iOS Implementation: 1. Used NSLAyout Constraints.
                     5. Used a searchViewController and integrated with an API to navigate to a particular eatery and display 
                      the food served by it that does not contain the allergens listed in the search bar.
                     
-Backend Implementation:
+Backend Implementation: 1. Used SQLAlchemy and Flask 
 Creators:
