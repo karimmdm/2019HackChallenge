@@ -25,7 +25,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UISearchRes
     var UnitOid = ["Bear Necessities":1,
                    "Bus Stop Bagels":2,
                    "Cafe Jennie":3,
-                   "Cornell Dairy":4,
+                   "Cornell Dairy ":4,
                    "Goldies":5,
                    "The Ivy Room":6,
                    "Mattins":7,
