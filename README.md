@@ -1,8 +1,9 @@
 # Safe Eat
 ## - Eat safe when we take care of finding the allergens for you -
 ### Screens: 
-<img width="459" alt="Screen Shot 2019-12-08 at 23 04 48" src="https://user-images.githubusercontent.com/42630113/70406571-34bf3800-1a0f-11ea-82f6-5ed5c0ac72ce.png">
+<img width="451" alt="Screen Shot 2019-12-08 at 23 04 48 copy" src="https://user-images.githubusercontent.com/42630113/70406672-8ebffd80-1a0f-11ea-9639-570dbbfd1acb.png">
 
+<img width="450" alt="Screen Shot 2019-12-08 at 23 04 48" src="https://user-images.githubusercontent.com/42630113/70406686-92538480-1a0f-11ea-8019-83025a82690e.png">
 
 
 ### Description: 
@@ -18,5 +19,7 @@ Ever went to an eatery looking for gluten-free food and returned disappointed? N
                     
 ### Backend Implementation: 
 - Used SQLAlchemy and Flask to create and update the Database
+- Implemented different routes to access food and ingredients in the database
+- Deployed using Google cloud to http://35.199.7.241/
 ### Creators: 
 Maitreyi Chatterjee, Masbubul Karim, Raahi Menon, Yaoyao Ma
