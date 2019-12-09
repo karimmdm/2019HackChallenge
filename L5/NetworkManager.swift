@@ -39,8 +39,8 @@ class NetworkManager {
             switch response.result {
             case .success(let data):
                 let jsonDecoder = JSONDecoder()
-                print(data)
-                print(String(data:data,encoding: .utf8))
+                //print(data)
+                //print(String(data:data,encoding: .utf8))
             
                 
                 if let recipeData = try? jsonDecoder.decode(RecipeSearchResponse.self, from: data) {
