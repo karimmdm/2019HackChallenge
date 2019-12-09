@@ -1,9 +1,9 @@
 # Safe Eat
 ## - Eat safe when we take care of finding the allergens for you -
 ### Screens: 
-<img width="451" alt="Screen Shot 2019-12-08 at 23 04 48 copy" src="https://user-images.githubusercontent.com/42630113/70406672-8ebffd80-1a0f-11ea-9639-570dbbfd1acb.png">
+<img width="861" alt="Screen Shot 2019-12-08 at 23 08 45" src="https://user-images.githubusercontent.com/42630113/70406753-c333b980-1a0f-11ea-9096-c5c443790c4b.png">
 
-<img width="450" alt="Screen Shot 2019-12-08 at 23 04 48" src="https://user-images.githubusercontent.com/42630113/70406686-92538480-1a0f-11ea-8019-83025a82690e.png">
+<img width="862" alt="Screen Shot 2019-12-08 at 23 09 04" src="https://user-images.githubusercontent.com/42630113/70406766-ccbd2180-1a0f-11ea-8bf4-60dfca15182e.png">
 
 
 ### Description: 
