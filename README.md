@@ -3,12 +3,14 @@
 ### Screens: 
 
 <img width="929" alt="Screen Shot 2019-12-08 at 23 12 35" src="https://user-images.githubusercontent.com/42630113/70406902-448b4c00-1a10-11ea-9f6a-09cc1684d928.png">
+
 ### Features:
 *Landing Page                           
 *Page Signin Page Eateries              
 *Page
 
 <img width="929" alt="Screen Shot 2019-12-08 at 23 11 13" src="https://user-images.githubusercontent.com/42630113/70406858-10179000-1a10-11ea-9241-f437b2dbb0c1.png">
+
 ### Features:
 *Items Page                             
 *Searching Page                 
