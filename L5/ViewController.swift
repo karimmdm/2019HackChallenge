@@ -72,7 +72,7 @@ class ViewController: UIViewController, UISearchResultsUpdating {
         // Create Person objects
         
         restaurant1 = Restaurant(food: "north", imageName: "Unknown-3", name: "Bear Necessities")
-        restaurant2 = Restaurant(food: "central", imageName: "Unknown", name: "Bus Stop Bagels")
+      
         restaurant3 = Restaurant(food: "nearest first", imageName: "restaurant 3", name: "Cafe Jennie")
         restaurant4 = Restaurant(food: "central", imageName: "restaurant4", name: "Cornell Dairy ")
         
@@ -91,7 +91,7 @@ class ViewController: UIViewController, UISearchResultsUpdating {
         
         
         
-        persons=[ restaurant1,restaurant2,restaurant3,restaurant4,restaurant5,restaurant6,restaurant7,restaurant4,restaurant8,restaurant9,restaurant10,restaurant11]
+        persons=[ restaurant1,restaurant3,restaurant4,restaurant5,restaurant6,restaurant7,restaurant4,restaurant8,restaurant9,restaurant10,restaurant11]
         
         
         nearestFirst = Filter(select: false, name: "nearest first")
