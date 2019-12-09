@@ -3,7 +3,7 @@
 //  L5
 //
 //  Created by Maitreyi Chatterjee on 22/11/19.
-//  Copyright © 2019 Kevin Chan. All rights reserved.
+//  Copyright © 2019 Maitreyi Chatterjee. All rights reserved.
 //
 
 import Foundation
