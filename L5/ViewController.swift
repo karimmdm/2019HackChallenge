@@ -226,7 +226,7 @@ extension ViewController: UICollectionViewDelegate {
             
             
             cell.followButtonPressed()
-            print(indexPath)
+           // print(indexPath)
             if cell.isFollowing {
                 selectedFilters.append(cell.filterName)
             } else {
