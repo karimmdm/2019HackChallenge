@@ -5,7 +5,7 @@
 ### Description: 
 Ever went to an eatery looking for gluten-free food and returned disappointed? Not any more. Safe Eat is an app that displays a list of eating options according to the user’s dietary restrictions or allergen information for on-campus eateries. Students with allergies can filter through food at different eateries by putting in their allergen information in a search bar. They can also filter through different eateries based on on-campus locations. Want to know more about what dishes your favourite eateries are serving but have a lot of allergies? Enjoy SafeEat!
 
-### Features:
+
 ### iOS Implementation: 
 - Used NSLAyout Constraints. 
 - Used Two UICollectionViews and a UITableView 
