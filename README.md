@@ -11,7 +11,7 @@
 
 <img width="929" alt="Screen Shot 2019-12-08 at 23 11 13" src="https://user-images.githubusercontent.com/42630113/70406858-10179000-1a10-11ea-9241-f437b2dbb0c1.png">
 
-### Features:
+
 4. Items Page                             
 5. Searching Page                 
 6. Search Result Page
