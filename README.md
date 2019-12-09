@@ -15,4 +15,5 @@ Ever went to an eatery looking for gluten-free food and returned disappointed? N
                     
 ### Backend Implementation: 
 - Used SQLAlchemy and Flask to create and update the Database
-### Creators: Maitreyi Chatterjee, Masbubul Karim, Raahi Menon, Yaoyao Ma
+### Creators: 
+Maitreyi Chatterjee, Masbubul Karim, Raahi Menon, Yaoyao Ma
