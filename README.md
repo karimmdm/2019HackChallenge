@@ -1,4 +1,4 @@
-# Safe Eat - Winner
+# Safe Eat (Winner of Hack Challenge 2019)
 ## 『eat safe when we take care of finding the allergens for you』
 ### Screens: 
 
