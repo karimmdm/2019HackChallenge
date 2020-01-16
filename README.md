@@ -6,8 +6,8 @@
 
 ### Features:
 1. Landing Page                           
-2. Page Signin Page Eateries              
-3. Page
+2. Signin Page         
+3. Eateries Page
 
 <img width="929" alt="Screen Shot 2019-12-08 at 23 11 13" src="https://user-images.githubusercontent.com/42630113/70406858-10179000-1a10-11ea-9241-f437b2dbb0c1.png">
 
